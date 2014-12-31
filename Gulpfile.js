@@ -29,7 +29,7 @@ gulp.task('css', function() {
 
 //RECARGA EL NAVEGADOR CUANDO HAY CAMBIOS EN EL HTML
 gulp.task('html', function() {
-	gulp.src('./app/*.html')
+	gulp.src(['./app/*.html', './app/paginas/*.html'])
 		.pipe(connect.reload())
 })
 
@@ -50,7 +50,7 @@ gulp.task('wiredep', function () {
 
 //VIGILA LOS CAMBIOS Y LANZA LAS TAREAS SELECCIONADAS
 gulp.task('watch', function() {
-	gulp.watch(['./app/*.html'], ['html'])
+	gulp.watch(['./app/*.html', './app/paginas/*.html'], ['html'])
 	gulp.watch(['./app/stylus/*.styl'], ['css', 'inject'])
 	gulp.watch(['./app/js/*.js'], ['inject'])
 	gulp.watch(['./bower.json'], ['wiredep'])

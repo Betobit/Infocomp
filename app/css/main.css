@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-cbzc27");
+  src: url("fonts/icomoon.eot?#iefix-cbzc27") format('embedded-opentype'), url("fonts/icomoon.woff?-cbzc27") format('woff'), url("fonts/icomoon.ttf?-cbzc27") format('truetype'), url("fonts/icomoon.svg?-cbzc27#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-login:before {
+  content: "\e603";
+}
+.icon-pass:before {
+  content: "\e602";
+}
+.icon-menu:before {
+  content: "\e601";
+}
+.icon-user:before {
+  content: "\e600";
+}
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+body {
+  background: #dedede;
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+}
+.header {
+  background: #fff;
+  width: 100%;
+}
+.header .titulo {
+  background: #0f355a;
+  color: #fff;
+  font-size: 1.45em;
+  padding: 0.4em;
+}
+.logo {
+  padding-left: 0;
+}
+.logo img {
+  width: 100%;
+}
+.navbar-nav {
+  display: inline-block;
+  float: none;
+  height: 45px;
+}
+.navbar-nav li a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  -ms-transition: 300ms;
+  transition: 300ms;
+}
+.sm-titulo {
+  color: #fff;
+  display: none;
+  font-size: 1.2em;
+  line-height: 50px;
+}
+/*************** TABLET QUERY ******************/
+@media screen and (max-width: 768px) {
+  .active {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .header .titulo {
+    display: none;
+  }
+  .navbar-header {
+    background: #0f355a;
+    text-align: center;
+  }
+  .navbar-header .sm-titulo {
+    display: inline-block;
+  }
+  .navbar-toggle {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+  }
+  .navbar-toggle .icon-menu {
+    color: #fff;
+    font-size: 1.8em;
+  }
+}
+/*************** PHONE QUERY ******************/
+@media screen and (max-width: 480px) {
+  .navbar-header .sm-titulo {
+    font-size: 0.9em;
+    line-height: 54px;
+  }
+}

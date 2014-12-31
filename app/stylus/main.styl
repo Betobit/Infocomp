@@ -1,0 +1,58 @@
+@import "nib"
+@import "fonts.styl"
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600")
+
+//Paleta de colores
+fondo   = #DEDEDE
+azulRey = #0F355A
+gris    = #bdc3c7
+
+body
+	background fondo
+	font-family "Open Sans"
+	font-size 16px
+	text-align center
+.header
+	background white
+	width 100%
+	.titulo
+		background azulRey
+		color white
+		font-size 1.45em
+		padding .4em
+.logo
+	padding-left 0
+	img
+		width 100%
+.navbar-nav
+	display inline-block
+	float none
+	height 45px
+	li a
+		transition 300ms
+.sm-titulo
+	color white
+	display none
+	font-size 1.2em
+	line-height 50px
+/*************** TABLET QUERY ******************/
+@media screen and (max-width 768px)
+	.active
+		transform rotate(-90deg)
+	.header .titulo
+		display none
+	.navbar-header
+		background azulRey
+		text-align center
+		.sm-titulo
+			display inline-block
+	.navbar-toggle
+		transition 300ms
+		.icon-menu
+			color white
+			font-size 1.8em
+/*************** PHONE QUERY ******************/
+@media screen and (max-width 480px)
+	.navbar-header .sm-titulo
+		font-size .9em
+		line-height 54px

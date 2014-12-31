@@ -1,0 +1,27 @@
+{
+  "name": "Infocomp",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Betobit/Infocomp",
+  "authors": [
+    "Jesús MArt"
+  ],
+  "description": "Sitio web",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Stylus",
+    "Bootstrap",
+    "jQuery",
+    "angularJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ]
+}

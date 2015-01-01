@@ -3,10 +3,10 @@ angular.module('infocomp.controllers', [])
 .controller('MainCtrl', function($scope) {
 
 })
-.controller('CarrerasCtrl', function($scope) {
+.controller('InicioCtrl', function($scope) {
 	
 })
-.controller('MainCtrl', function($scope) {
+.controller('CarrerasCtrl', function($scope) {
 	
 })
 .controller('ProyectosCtrl', function($scope) {

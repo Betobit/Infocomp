@@ -10,11 +10,6 @@ angular.module('infocomp', ['ngRoute', 'infocomp.controllers'])
 //Acesso a las plantillas que serán incrustadas en el html
 .config(function($routeProvider) {
 	$routeProvider
-		//Página padre
-		.when('/', {
-			templateUrl : 'index.html',
-			controller  : 'MainCtrl'
-		})
 		//Página de INICIO
 		.when('/inicio', {
 			templateUrl : 'paginas/inicio.html',

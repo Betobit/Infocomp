@@ -31,6 +31,36 @@
   content: "\e600";
 }
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+#carousel-noticias {
+  height: 280px;
+  overflow: hidden;
+  padding: 0;
+}
+#carousel-noticias .carousel-inner {
+  min-height: 100%;
+}
+#carousel-noticias .item {
+  min-height: 160px;
+}
+#carousel-noticias .item img {
+  min-height: 160px;
+  width: 100%;
+}
+#carousel-noticias .carousel-control {
+  cursor: pointer;
+}
+#carousel-noticias .carousel-indicators li {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  -ms-transition: 300ms;
+  transition: 300ms;
+}
+#carousel-noticias .carousel-indicators .active {
+  background: rgba(0,0,0,0.9);
+}
 body {
   background: #dedede;
   font-family: "Open Sans";
@@ -110,5 +140,8 @@ body {
   .navbar-header .sm-titulo {
     font-size: 0.9em;
     line-height: 54px;
+  }
+  #carousel-noticias {
+    height: 160px;
   }
 }

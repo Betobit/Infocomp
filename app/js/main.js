@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	//Girar boton de menu
 	$('.navbar-toggle').on('click', function() {
-		$(this).toggleClass('active')
+		$(this).toggleClass('activo')
 	})
 
 	//Ocultar menu al hacer click en una opcion

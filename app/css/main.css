@@ -71,13 +71,14 @@
   width: 100%;
 }
 body {
-  background: #dedede;
+  background: #bdc3c7;
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
 }
 footer {
   background: #0f355a;
+  margin-bottom: 1em;
   padding: 1em 0;
 }
 .header {
@@ -90,6 +91,11 @@ footer {
   font-size: 1.45em;
   padding: 0.4em;
 }
+.contenido {
+  background: #ececec;
+  margin: 1em 0;
+  padding: 15px 0;
+}
 .logo {
   padding-left: 0;
 }
@@ -97,19 +103,28 @@ footer {
   width: 100%;
 }
 .logos img {
-  height: 60px;
+  height: 3em;
+}
+.navbar {
+  background: #193f64;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .navbar-nav {
   display: inline-block;
   float: none height 45px;
 }
 .navbar-nav li a {
+  color: #bdc3c7;
   text-align: center;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
   -ms-transition: 300ms;
   transition: 300ms;
+}
+.navbar-nav li:nth-child(2) {
+  cursor: pointer;
 }
 .sm-titulo {
   color: #fff;
@@ -162,5 +177,15 @@ footer {
   }
   #carousel-noticias .description {
     top: 90px;
+  }
+}
+/*************** MAX QUERY ******************/
+@media screen and (min-width: 1200px) {
+  body {
+    text-align: center;
+  }
+  .main {
+    display: inline-block;
+    width: 1200px;
   }
 }

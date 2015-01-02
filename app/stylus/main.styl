@@ -4,18 +4,18 @@
 //Estilos de cada página
 @import "inicio.styl"
 //Paleta de colores
-fondo   = #DEDEDE
 azulRey = #0F355A
+fondo   = #ececec
 gris    = #bdc3c7
-
 //Estilos universales
 body
-	background fondo
+	background gris
 	font-family "Open Sans"
 	font-size 16px
 	text-align center
 footer
 	background azulRey
+	margin-bottom 1em
 	padding 1em 0
 .header
 	background white
@@ -25,23 +25,34 @@ footer
 		color white
 		font-size 1.45em
 		padding .4em
+.contenido
+	 background fondo
+	 margin 1em 0
+	 padding 15px 0
 .logo
 	padding-left 0
 	img
 		width 100%
 .logos img //footer
-	height 60px
+	height 3em
+.navbar
+	background azulRey + 10
+	border-radius 0
 .navbar-nav
 	display inline-block
 	float none	height 45px
 	li a
+		color gris
 		text-align center
 		transition 300ms
+	li:nth-child(2)
+		cursor pointer
 .sm-titulo
 	color white
 	display none
 	font-size 1.2em
 	line-height 50px
+
 /*************** TABLET QUERY ******************/
 @media screen and (max-width 768px)
 	.activo
@@ -69,3 +80,10 @@ footer
 		height 160px
 		.description
 			top 90px			
+/*************** MAX QUERY ******************/
+@media screen and (min-width 1200px)
+	body
+		text-align center
+	.main
+		display inline-block
+		width 1200px

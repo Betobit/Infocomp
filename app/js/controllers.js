@@ -5,7 +5,7 @@ angular.module('infocomp.controllers', [])
 })
 
 .controller('InicioCtrl', function($scope, $http) {
-	$http.get('http://graph.facebook.com/406553412831377/photos/uploaded?fields=source,name&limit=5')
+	$http.get('http://graph.facebook.com/acominf/photos/uploaded?fields=source,name&limit=5')
 		.success(function(response) {
 			$scope.noticias = response.data;
 		}).error(function(error) {

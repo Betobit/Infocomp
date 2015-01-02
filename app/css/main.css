@@ -39,13 +39,6 @@
 #carousel-noticias .carousel-inner {
   min-height: 100%;
 }
-#carousel-noticias .item {
-  min-height: 160px;
-}
-#carousel-noticias .item img {
-  min-height: 160px;
-  width: 100%;
-}
 #carousel-noticias .carousel-control {
   cursor: pointer;
 }
@@ -60,6 +53,22 @@
 }
 #carousel-noticias .carousel-indicators .active {
   background: rgba(0,0,0,0.9);
+}
+#carousel-noticias .description {
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  height: 80px;
+  padding: 0 1em;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+#carousel-noticias .item {
+  min-height: 160px;
+}
+#carousel-noticias .item img {
+  min-height: 160px;
+  width: 100%;
 }
 body {
   background: #dedede;
@@ -85,8 +94,7 @@ body {
 }
 .navbar-nav {
   display: inline-block;
-  float: none;
-  height: 45px;
+  float: none height 45px;
 }
 .navbar-nav li a {
   text-align: center;
@@ -144,5 +152,8 @@ body {
   }
   #carousel-noticias {
     height: 160px;
+  }
+  #carousel-noticias .description {
+    top: 90px;
   }
 }

@@ -89,6 +89,7 @@ body {
   height: 45px;
 }
 .navbar-nav li a {
+  text-align: center;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;

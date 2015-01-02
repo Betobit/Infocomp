@@ -2,9 +2,15 @@
 
 $(document).ready(function() {
 	
+	//Girar boton de menu
 	$('.navbar-toggle').on('click', function() {
 		$(this).toggleClass('active')
-		console.log('gag')
+	})
+
+	//Ocultar menu al hacer click en una opcion
+	$('#navbar li a').on('click', function() {
+		$("#navbar").collapse('hide')
+		$('.navbar-toggle').toggleClass('active')
 	})
 
 });

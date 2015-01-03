@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 });
 
-angular.module('infocomp', ['ngRoute', 'infocomp.controllers'])
+angular.module('infocomp', ['ngRoute', 'infocomp.controllers', 'ngAnimate'])
 
 //Acesso a las plantillas que serán incrustadas en el html
 .config(function($routeProvider) {

@@ -70,9 +70,17 @@
   min-height: 160px;
   width: 100%;
 }
+.maestros {
+  text-align: center;
+}
 .maestros .maestro {
-  border: 1px solid #000;
+  background: #dedede;
+  -webkit-box-shadow: 0px 1px 2px #000;
+  box-shadow: 0px 1px 2px #000;
+  display: inline-block;
+  float: none;
   padding: 0.5em 0;
+  margin: 0 10px 10px 0;
 }
 .maestros .maestro img {
   -webkit-border-radius: 50%;

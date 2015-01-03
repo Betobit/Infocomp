@@ -70,6 +70,15 @@
   min-height: 160px;
   width: 100%;
 }
+.maestros .maestro {
+  border: 1px solid #000;
+  padding: 0.5em 0;
+}
+.maestros .maestro img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 4em;
+}
 body {
   background: #c7cdd1;
   color: #000;

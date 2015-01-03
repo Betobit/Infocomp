@@ -8,9 +8,12 @@ $(document).ready(function() {
 	})
 
 	//Ocultar menu al hacer click en una opcion
-	$('#navbar li a').on('click', function() {
-		$("#navbar").collapse('hide')
-		$('.navbar-toggle').toggleClass('active')
+	$(document).on('click','.navbar-collapse.in',function(e) {
+	    if( $(e.target).is('a') )
+	    {
+	        $(this).collapse('hide')
+	        $('.navbar-toggle').toggleClass('activo')
+	    }
 	})
 
 });

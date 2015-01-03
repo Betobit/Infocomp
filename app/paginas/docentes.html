@@ -1,4 +1,13 @@
-<div>
-	<h1>Docentes</h1>
-	<p>{{ message}}</p>
+<div class="row">
+	<h3 class="col-md-12">{{titulo}}</h3>
+</div>
+<div class="row maestros" ng-repeat="maestro in maestros track by $index" ng-if="$index%3==0">
+	<div class="col-lg-4 col-sm-4 maestro" ng-repeat="i in [$index,$index+1,$index+2]" ng-if="maestros[i]!=null">
+		<div class="col-sm-4">
+			<img src={{maestros[i].image}}>
+		</div>
+		<div class="col-sm-4">
+			<span>Correo: {{maestros[i].email}} </span>
+		</div>
+	</div>
 </div>

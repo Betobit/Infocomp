@@ -1,15 +1,17 @@
 @import "nib"
-@import "fonts.styl"
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600")
+@import "fonts.styl"
 //Estilos de cada página
 @import "inicio.styl"
 //Paleta de colores
 azulRey = #0F355A
-fondo   = #ececec
-gris    = #bdc3c7
+azul    = azulRey + 10
+blanco  = #fafafa
+gris    = #C7CDD1
 //Estilos universales
 body
 	background gris
+	color black
 	font-family "Open Sans"
 	font-size 16px
 	text-align center
@@ -17,18 +19,24 @@ footer
 	background azulRey
 	margin-bottom 1em
 	padding 1em 0
+h3
+	border-bottom 1px solid azul
+	padding-bottom .5em
+	margin-top 1em
 .header
 	background white
 	width 100%
 	.titulo
 		background azulRey
 		color white
-		font-size 1.45em
+		font-size 1.5em
 		padding .4em
 .contenido
-	 background fondo
+	 background blanco
 	 margin 1em 0
-	 padding 15px 0
+.login
+	padding 1em
+	text-align center
 .logo
 	padding-left 0
 	img
@@ -36,7 +44,7 @@ footer
 .logos img //footer
 	height 3em
 .navbar
-	background azulRey + 10
+	background azul
 	border-radius 0
 .navbar-nav
 	display inline-block
@@ -52,7 +60,6 @@ footer
 	display none
 	font-size 1.2em
 	line-height 50px
-
 /*************** TABLET QUERY ******************/
 @media screen and (max-width 768px)
 	.activo

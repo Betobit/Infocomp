@@ -1,7 +1,8 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-cbzc27");
-  src: url("fonts/icomoon.eot?#iefix-cbzc27") format('embedded-opentype'), url("fonts/icomoon.woff?-cbzc27") format('woff'), url("fonts/icomoon.ttf?-cbzc27") format('truetype'), url("fonts/icomoon.svg?-cbzc27#icomoon") format('svg');
+  src: url("fonts/icomoon.eot?-vs54fe");
+  src: url("fonts/icomoon.eot?#iefix-vs54fe") format('embedded-opentype'), url("fonts/icomoon.woff?-vs54fe") format('woff'), url("fonts/icomoon.ttf?-vs54fe") format('truetype'), url("fonts/icomoon.svg?-vs54fe#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,19 +19,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-login:before {
-  content: "\e603";
+.icon-facebook:before {
+  content: "\20";
 }
-.icon-pass:before {
-  content: "\e602";
+.icon-twitter:after {
+  content: "\21";
+}
+.icon-youtube:before {
+  content: "\22";
 }
 .icon-menu:before {
-  content: "\e601";
+  content: "\23";
 }
-.icon-user:before {
-  content: "\e600";
-}
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 #carousel-noticias {
   height: 280px;
   overflow: hidden;
@@ -71,7 +71,8 @@
   width: 100%;
 }
 body {
-  background: #bdc3c7;
+  background: #c7cdd1;
+  color: #000;
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
@@ -81,6 +82,11 @@ footer {
   margin-bottom: 1em;
   padding: 1em 0;
 }
+h3 {
+  border-bottom: 1px solid #193f64;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+}
 .header {
   background: #fff;
   width: 100%;
@@ -88,13 +94,16 @@ footer {
 .header .titulo {
   background: #0f355a;
   color: #fff;
-  font-size: 1.45em;
+  font-size: 1.5em;
   padding: 0.4em;
 }
 .contenido {
-  background: #ececec;
+  background: #fafafa;
   margin: 1em 0;
-  padding: 15px 0;
+}
+.login {
+  padding: 1em;
+  text-align: center;
 }
 .logo {
   padding-left: 0;
@@ -115,7 +124,7 @@ footer {
   float: none height 45px;
 }
 .navbar-nav li a {
-  color: #bdc3c7;
+  color: #c7cdd1;
   text-align: center;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;

@@ -1,8 +1,6 @@
-<div class="row">
-	<h3 class="col-md-12">{{titulo}}</h3>
-</div>
-<div class="row maestros" ng-repeat="maestro in maestros track by $index" ng-if="$index%3==0" ng-animate="{enter: 'animate-enter">
-	<div class="col-lg-3 col-sm-5 maestro" ng-repeat="i in [$index,$index+1,$index+2]" ng-if="maestros[i]!=null">
+<h3>{{titulo}}</h3>
+<div class="row maestros" ng-repeat="maestro in maestros track by $index" ng-if="$index%3==0">
+	<div class="col-lg-3 col-sm-5 col-xs-10 maestro" ng-repeat="i in [$index,$index+1,$index+2]" ng-if="maestros[i]!=null">
 		<div class="col-sm-4">
 			<img src={{maestros[i].image}}>
 		</div>

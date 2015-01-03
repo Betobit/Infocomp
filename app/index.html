@@ -13,6 +13,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- bower:css -->
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="lib/ngDialog/css/ngDialog.css" />
+	<link rel="stylesheet" href="lib/ngDialog/css/ngDialog-theme-default.css" />
 	<!-- endbower -->
 	<!-- inject:css -->
 	<link rel="stylesheet" href="/css/main.css">
@@ -20,7 +22,7 @@
 </head>
 
 <body>
-<div class="main">
+<div class="main" ng-controller="MainCtrl">
 	 <!-- HEADER -->
 	<div class="container header">	
 	    <div class="row">
@@ -47,14 +49,14 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Carreras<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Informática</a></li>
+                <li><a href="#carreras/Informática">Informática</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Computación</a></li>
+                <li><a href="#carreras/Computación">Computación</a></li>
               </ul>
             </li>
+            <li><a href="" ng-click="abrirLogin()">Alumnos</a></li>   
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#docentes">Docentes</a></li>
-            <li><a href="#transparencia">Transparencia</a></li>      
+            <li><a href="#docentes">Docentes</a></li>   
             <li><a href="#infocomp">Infocomp</a></li>      
           </ul>
         </div><!--/NAVBAR -->
@@ -84,7 +86,7 @@
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/angular-route/angular-route.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="lib/angular-animate/angular-animate.js"></script>
+	<script src="lib/ngDialog/js/ngDialog.js"></script>
 	<!-- endbower -->
 	<!-- inject:js -->
 	<script src="/js/controllers.js"></script>

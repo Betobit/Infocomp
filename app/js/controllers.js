@@ -1,9 +1,17 @@
 angular.module('infocomp.controllers', [])
 
-.controller('MainCtrl', function($scope) {
-
+.controller('LoginCtrl', function($scope) {
+	$scope.titulo = 'Login'
 })
 
+.controller('MainCtrl', function($scope, ngDialog) {
+	$scope.abrirLogin = function(){
+		ngDialog.open({
+			template: 'paginas/login.html',
+			controller: 'LoginCtrl'
+		})
+	}
+})
 .controller('InicioCtrl', function($scope, $http) {
 	$scope.titulo = "Bienvenidos"
 	$http.get('http://graph.facebook.com/acominf/photos/uploaded?fields=source,name&limit=5')
@@ -14,12 +22,13 @@ angular.module('infocomp.controllers', [])
 		})
 })
 
-.controller('CarrerasCtrl', function($scope) {
-	
+
+.controller('CarrerasCtrl', function($scope, $routeParams) {
+	$scope.titulo = 'Ingeniería en '+$routeParams.carrera
 })
 
 .controller('ProyectosCtrl', function($scope) {
-	
+	$scope.titulo = 'Proyectos'
 })
 
 .controller('DocentesCtrl', function($scope) {
@@ -33,10 +42,10 @@ angular.module('infocomp.controllers', [])
 	$scope.maestros = maestros
 })
 
-.controller('TransparenciaCtrl', function($scope) {
+.controller('AlumnosCtrl', function($scope) {
 	
 })
 
 .controller('InfocompCtrl', function($scope) {
-	
+	$scope.titulo = 'INFOCOMP'
 })

@@ -18,7 +18,8 @@ $(document).ready(function() {
 
 });
 
-angular.module('infocomp', ['ngRoute', 'infocomp.controllers', 'ngAnimate'])
+angular.module('infocomp', ['ngRoute', 'infocomp.controllers',
+	'ngDialog'])
 
 //Acesso a las plantillas que serán incrustadas en el html
 .config(function($routeProvider) {
@@ -29,7 +30,7 @@ angular.module('infocomp', ['ngRoute', 'infocomp.controllers', 'ngAnimate'])
 			controller  : 'InicioCtrl'
 		})
 		//CARRERAS
-		.when('/carreras', {
+		.when('/carreras/:carrera', {
 			templateUrl : 'paginas/carreras.html',
 			controller  : 'CarrerasCtrl'
 		})
@@ -43,10 +44,10 @@ angular.module('infocomp', ['ngRoute', 'infocomp.controllers', 'ngAnimate'])
 			templateUrl : 'paginas/docentes.html',
 			controller  : 'DocentesCtrl'
 		})
-		//TRANSPARENCIA
+		//ALUMNOS
 		.when('/transparencia', {
-			templateUrl : 'paginas/transparencia.html',
-			controller  : 'TransparenciaCtrl'
+			templateUrl : 'paginas/alumnos.html',
+			controller  : 'AlumnosCtrl'
 		})
 		//INFOCOMP
 		.when('/infocomp', {

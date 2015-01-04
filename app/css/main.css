@@ -1,8 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-vs54fe");
-  src: url("fonts/icomoon.eot?#iefix-vs54fe") format('embedded-opentype'), url("fonts/icomoon.woff?-vs54fe") format('woff'), url("fonts/icomoon.ttf?-vs54fe") format('truetype'), url("fonts/icomoon.svg?-vs54fe#icomoon") format('svg');
+  src: url("fonts/icomoon.eot?-q2bryf");
+  src: url("fonts/icomoon.eot?#iefix-q2bryf") format('embedded-opentype'), url("fonts/icomoon.woff?-q2bryf") format('woff'), url("fonts/icomoon.ttf?-q2bryf") format('truetype'), url("fonts/icomoon.svg?-q2bryf#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,14 +19,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-facebook:before {
-  content: "\20";
+.icon-objetivo:before {
+  content: "\e606";
 }
-.icon-twitter:after {
-  content: "\21";
+.icon-bandera:before {
+  content: "\e604";
+}
+.icon-github:before {
+  content: "\e603";
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+.icon-facebook:before {
+  content: "\e601";
 }
 .icon-youtube:before {
-  content: "\22";
+  content: "\e600";
+}
+.icon-edificio:before {
+  content: "\e605";
 }
 .icon-menu:before {
   content: "\23";
@@ -102,7 +114,7 @@
   background: #193f64;
   border: none;
   border-bottom: 4px solid #052b50;
-  bottom: 0.7em;
+  bottom: 0.8em;
   color: #fff;
   display: inline-block;
   left: 25%;
@@ -117,6 +129,26 @@
   -o-transform: translateY(4px);
   -ms-transform: translateY(4px);
   transform: translateY(4px);
+}
+.acerca {
+  padding-left: 1em;
+}
+.acerca h4 {
+  color: #0f355a;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+}
+.acerca h4 span {
+  padding-right: 1em;
+}
+.acerca p {
+  font-size: 0.9em;
+}
+.acerca p strong {
+  color: #0f355a;
+}
+.acerca ul li {
+  font-size: 0.9em;
 }
 body {
   background: #c7cdd1;

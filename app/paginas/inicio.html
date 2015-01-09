@@ -1,4 +1,39 @@
-<h3>{{titulo}}</h3>
+<div class="row">
+	<div id="carousel" class="carousel slide col-md-12" data-ride="carousel" data-pause="hover">
+		<!-- Indicadores -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#carousel" data-slide-to="3"></li>
+			<li data-target="#carousel" data-slide-to="4"></li>
+			<li data-target="#carousel" data-slide-to="5"></li>
+			<li data-target="#carousel" data-slide-to="6"></li>
+		</ol>
+
+		<!-- Imagenes -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active"><img src="css/img/slider/slider1.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider2.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider3.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider4.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider5.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider6.jpg" alt=""></div>
+			<div class="item"><img src="css/img/slider/slider7.jpg" alt=""></div>
+		</div>
+		<!-- Controles -->
+		<a class="left carousel-control" data-target="#carousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="right carousel-control" data-target="#carousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
+	</div>
+</div>
+
+<h3></h3>
 <div class="row bienvenida">
 	<div class="col-md-8 text-justify">
 		<p>El Área de Computación e Informática pertence a la Facultad de Ingeniería y ofrece dos carreras a nivel licenciatura: <a href="#carreras/Computación">Ingeniería en Computación </a>e <a href="#carreras/Informática">Ingeniería en Informática</a>.</p>
@@ -12,31 +47,9 @@
 		<img src="http://infocomp.ingenieria.uaslp.mx/infocomp/images/edificio.jpg" alt="">
 	</div>
 </div>
-<div class="row">
-	<h3 class="col-md-12">Noticias</h3>
-</div>
-<div class="row">
-	<div id="carousel-noticias" class="carousel slide col-md-8" data-ride="carousel" data-pause="hover">
-		<!-- Noticias -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active" ng-repeat-start="noticia in noticias" ng-if="$first">
-				<img src={{noticia.source}}>
-      			<div class="description">{{noticia.name}}</div>
-			</div>
-			<div class="item" ng-repeat-end="noticia in noticias" ng-if="!$first">
-				<img src={{noticia.source}} alt={{noticia.name}}>
-      			<div class="description">{{noticia.name}}</div>
-			</div>
-		</div>
-		<!-- Controles -->
-		<a class="left carousel-control" data-target="#carousel-noticias" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Anterior</span>
-		</a>
-		<a class="right carousel-control" data-target="#carousel-noticias" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Siguiente</span>
-		</a>
-	</div>
-	<div style="height: 600px"></div>
+
+<h3>{{titulo}}</h3>
+<div class="row noticias">
+	<div class="noticia"></div>
+	<div class="noticia"></div>	
 </div>

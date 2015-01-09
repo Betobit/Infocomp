@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?-q2bryf");
@@ -46,30 +46,25 @@
 .bienvenida img {
   max-width: 290px;
 }
-#carousel-noticias {
-  height: 280px;
+#carousel {
+  height: 260px;
   overflow: hidden;
   padding: 0;
 }
-#carousel-noticias .carousel-inner {
+#carousel .carousel-inner {
   min-height: 100%;
 }
-#carousel-noticias .carousel-control {
+#carousel .carousel-control {
   cursor: pointer;
 }
-#carousel-noticias .carousel-indicators li {
-  background: rgba(0,0,0,0.6);
-  border: none;
+#carousel .carousel-indicators li {
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
   -ms-transition: 300ms;
   transition: 300ms;
 }
-#carousel-noticias .carousel-indicators .active {
-  background: rgba(0,0,0,0.9);
-}
-#carousel-noticias .description {
+#carousel .description {
   background: rgba(0,0,0,0.7);
   color: #fff;
   height: 80px;
@@ -78,12 +73,24 @@
   top: 200px;
   width: 100%;
 }
-#carousel-noticias .item {
+#carousel .item {
   min-height: 160px;
 }
-#carousel-noticias .item img {
+#carousel .item img {
   min-height: 160px;
   width: 100%;
+}
+.noticias {
+  padding: 5px 15px 15px 15px;
+}
+.noticias .noticia {
+  background: #d2d7d3;
+  display: inline-block;
+  height: 140px;
+  float: none;
+  margin: 0;
+  margin-right: 1%;
+  width: 48%;
 }
 .maestros {
   text-align: center;
@@ -153,7 +160,7 @@
 body {
   background: #c7cdd1;
   color: #000;
-  font-family: "Open Sans";
+  font-family: "PT Sans";
   font-size: 16px;
   text-align: center;
 }
@@ -167,8 +174,13 @@ h3 {
   padding-bottom: 0.5em;
   margin-top: 1em;
 }
+.container {
+  max-width: 1000px;
+}
 .contenido {
   background: #fafafa;
+  -webkit-box-shadow: 0px 2px 2px #808080;
+  box-shadow: 0px 2px 2px #808080;
   margin: 1em 0;
 }
 .header {
@@ -269,12 +281,12 @@ h3 {
   }
 }
 /*************** MAX QUERY ******************/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   body {
     text-align: center;
   }
   .main {
     display: inline-block;
-    width: 1200px;
+    width: 1000px;
   }
 }

@@ -13,7 +13,7 @@ angular.module('infocomp.controllers', [])
 	}
 })
 .controller('InicioCtrl', function($scope, $http) {
-	$scope.titulo = "Bienvenidos"
+	$scope.titulo = "Noticias"
 	$http.get('http://graph.facebook.com/acominf/photos/uploaded?fields=source,name&limit=5')
 		.success(function(response) {
 			$scope.noticias = response.data;

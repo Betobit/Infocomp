@@ -49,7 +49,11 @@
 </div>
 
 <h3>{{titulo}}</h3>
-<div class="row noticias">
-	<div class="noticia"></div>
-	<div class="noticia"></div>	
+<div class="noticias">
+	<div class="noticia" ng-repeat="noticia in noticias">
+		<img src={{noticia.source}}>
+		<div class="info">
+			{{noticia.name}}
+		</div>
+	</div>
 </div>

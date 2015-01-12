@@ -13,13 +13,24 @@ angular.module('infocomp.controllers', [])
 	}
 })
 .controller('InicioCtrl', function($scope, $http) {
-	$scope.titulo = "Noticias"
-	$http.get('http://graph.facebook.com/acominf/photos/uploaded?fields=source,name&limit=5')
+	$scope.titulo = "Noticias",
+	$scope.noticias = []
+	$http.get('http://graph.facebook.com/acominf/photos/uploaded?fields=source,name')
 		.success(function(response) {
-			$scope.noticias = response.data;
+
+			var noticias = response.data;
+			for(var i =0; i<noticias.length; i++)
+			{
+				if(typeof noticias[i].name != 'undefined')
+				{
+					$scope.noticias.push(noticias[i])
+				}
+			}
+
 		}).error(function(error) {
 			console.log(error)
 		})
+
 })
 
 

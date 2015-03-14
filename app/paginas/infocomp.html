@@ -31,6 +31,11 @@
 	</div>
 	
 	<!--DOCUMENTOS -->
-	<div class="col-md-5"></div>
+	<div class="col-md-5 documentos">
+		<h2>Normativa de la UASLP</h2>
+		<a ng-repeat="documento in documentosNormativa" href="{{documento.link}}" target="_blank">{{documento.nombre}}</a>
+		<h2>Normativa de la Facultad</h2>
+		<a ng-repeat="documento in documentosFacultad" href="{{documento.link}}" target="_blank">{{documento.nombre}}</a>
+	</div>
 
 </div>
